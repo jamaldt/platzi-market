@@ -11,9 +11,9 @@ import org.mapstruct.Mappings;
 public interface CategoryMapper
 {
     @Mappings({
-        @Mapping( source = "idCategoria",target = "categoryId" ),
-        @Mapping( source = "descripcion",target = "category" ),
-        @Mapping( source = "estado",target = "active" )
+            @Mapping( source = "idCategoria",target = "categoryId" ),
+            @Mapping( source = "descripcion",target = "category" ),
+            @Mapping( source = "estado",target = "active" )
     })
     Category toCategory( Categoria categoria );
 
